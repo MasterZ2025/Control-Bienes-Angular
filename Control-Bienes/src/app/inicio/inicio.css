@@ -1,8 +1,19 @@
+body {
+  background-image: url('../../../public/assets/fondo-inicio.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+}
+
 .texto_header{
-  color: rgb(175, 175, 175);
+  color: rgb(68, 68, 68);
   font-size: 10px;
   line-height: 0.5;
-  ;
 }
 
 .titulo {
@@ -19,39 +30,89 @@
   margin-top: 10px;
 }
 
-.header {
+main{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
 }
 
 .registroBoton {
-  background-color: green;
-  color: white;
-  font-size: 15px;
-  width: 100px; /* Ancho mínimo opcional */
-  height: 100px; /* Alto mínimo opcional */
+  width:200px;
+  height:70px;
+  background: rgb(2, 141, 2);
+  border-radius: 20px;
+  color:#fff;
+  font-size: 21px;
+  letter-spacing: 3px;
+  font-family: 'system-ui';
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  padding: 0px;
+  transition: all .5s;
+  box-shadow: 0px 3px 3px rgba(0,0,0,.2);
+  border: none;
+
+  &:hover {
+    background-color: #005700;
+  }
 }
 
 .botoncolumna1 {
-  background-color: blue;
-  color: white;
-  font-size: 15px;
-  width: 100px; /* Ancho mínimo opcional */
-  height: 100px; /* Alto mínimo opcional */
+  width:200px;
+  height:70px;
+  background: #0047AB;
+  border-radius: 20px;
+  color:#fff;
+  font-size: 17px;
+  letter-spacing: 3px;
+  font-family: 'system-ui';
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  padding: 0px;
+  transition: all .5s;
+  box-shadow: 0px 3px 3px rgba(0,0,0,.2);
+  border: none;
+
+
+  &:hover {
+    background-color: #003380;
+  }
 }
 
 .botoncolumna2 {
-  background-color: orangered;
-  color: white;
-  font-size: 15px;
-  width: 100px; /* Ancho mínimo opcional */
-  height: 100px; /* Alto mínimo opcional */
+  width:200px;
+  height:70px;
+  background: #FF6600;
+  border-radius: 20px;
+  color:#fff;
+  font-size: 17px;
+  letter-spacing: 3px;
+  font-family: 'system-ui';
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  padding: 0px;
+  transition: all .5s;
+  box-shadow: 0px 3px 3px rgba(0,0,0,.2);
+  border: none;
+  
+
+  &:hover {
+    background-color: #cc5200;
+  }
 }
 
 .botones-container {
   display: flex;
   justify-content: center;
-  gap: 40px; /* Espacio entre columnas */
+  align-items: center; /* Centra verticalmente los hijos */
+  gap: 40px;
   margin-top: 30px;
+  min-height: 350px; /* Ajusta según el alto que desees */
 }
 
 .columna,
